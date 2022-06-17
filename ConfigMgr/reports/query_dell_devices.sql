@@ -1,3 +1,10 @@
+/*
+Prequisites:
+- 'Dell Command | Monitor' installed on client
+- DCIM .mof files imported and enabled in ConfigMgr > Client Settings > Hardware Inventory
+- 'l' (city) and 'st' (state) attributes enabled in ConfigMgr > AD User Discovery > AD Attributes
+*/
+
 SELECT
     DISTINCT SYS.ResourceID,
     CONSOLE.TopConsoleUser0 AS 'Top User',

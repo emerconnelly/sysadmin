@@ -1,0 +1,102 @@
+# $(Get-AzureADUser -SearchString "emer connelly").UserPrincipalName >> user-upns.txt
+Write-Host ""
+
+while ($true) {
+    Write-Host "Is your list of user UPNs, one per line, located at .\user-upns.txt? (Y/N): " -NoNewLine
+    $answer = Read-Host
+    if ($answer -eq "Y") {
+        $userUPNs = Get-Content -Path ".\user-upns.txt"
+        break
+    }
+    elseif ($answer -eq "N") {
+        Write-Host "Please create your list of user UPNs, one per line, located at .\user-upns.txt`n"
+    }
+    else {
+        Write-Host "Invalid answer`n"
+    }
+}
+
+# if not already connected then connect to the Azure AD tenant 
+try { 
+    Get-AzureADTenantDetail > $null
+} 
+catch [Microsoft.Open.Azure.AD.CommonLibrary.AadNeedAuthenticationException] {
+    Write-Host "`nLog in to the Azure AD tenant..."
+    Connect-AzureAD
+}
+
+# create custom class for a clean license list
+class customLicenseClass {
+    [string]$skuPartNumber
+    [int]$available
+    [int]$enabled
+    [int]$consumed
+}
+$licenseTable = New-Object System.Collections.Generic.List[customLicenseClass]
+
+# list the tenant license details
+$licenses = Get-AzureADSubscribedSku | Select-Object -Property SkuPartNumber, ConsumedUnits -ExpandProperty PrepaidUnits
+foreach ($license in $licenses) {
+    $licenseTable += @([customLicenseClass]@{`
+                skuPartNumber = $license.SkuPartNumber; `
+                available     = $($license.Enabled - $license.ConsumedUnits); `
+                enabled       = $license.Enabled; `
+                consumed      = $license.ConsumedUnits
+        })
+}
+Write-Host "`nCurrent tenant licenses:"
+$licenseTable | Format-Table -AutoSize
+
+# user input and verify the license skuPartNumber
+while ($true) {
+    Write-Host "https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-service-plan-reference"
+    Write-Host "Enter the subscription license skuPartNumber: " -NoNewLine
+    $skuPartNumber = Read-Host
+
+    if ($licenseTable.SkuPartNumber -contains $skuPartNumber) {
+        break
+    }
+    else {
+        Write-Host "Invalid or unsubscribed, try again.`n"
+    }
+}
+
+# verify removal of license from the desired users
+Write-Host "`nRemoving $skuPartNumber from the following users:"
+$userUPNs
+Write-Host "`nContinue? (Y/N): " -NoNewLine
+while ($true) {
+    $answer = Read-Host
+    if ($answer -eq "Y") {
+        Write-Host ""
+        break
+    }
+    elseif ($answer -eq "N") {
+        Write-Host "Exiting...`n"
+        exit
+    }
+    else {
+        Write-Host "Invalid answer`n"
+    }
+}
+
+while ($true) {
+    # create the AssignedLicenses object, designed to include one license
+    $license = New-Object -TypeName Microsoft.Open.AzureAD.Model.AssignedLicenses
+    # assign the AssignedLicense object's skuID the skuPartNumber provided earlier
+    $license.RemoveLicenses = (Get-AzureADSubscribedSku | Where-Object -Property SkuPartNumber -Value $skuPartNumber -EQ).SkuID
+    # assign the AssignedLicenses object to the user
+    foreach ($userUPN in $userUPNs) {
+        Write-Host "Removing $skuPartNumber from $userUPN..."
+        try {
+            Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $license
+            Write-Host "License removal successful.`n" -ForegroundColor Green
+        }
+        catch {
+            Write-Host "$($PSItem.Exception.Message)`n" -ForegroundColor Red
+        }
+    }
+    break
+}
+
+Write-Host ""

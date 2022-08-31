@@ -1,4 +1,4 @@
-# Dell device SQL queries for ConfigMgr
+# ConfigMgr SQL queries for Dell devices
 
 ### Pre-requisites
 - Dell Command Monitor deployed to devices

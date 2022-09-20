@@ -1,2 +1,2 @@
 # sysadmin
-System Administration tools -- use at your own risk
+SysOps tools - use at own risk

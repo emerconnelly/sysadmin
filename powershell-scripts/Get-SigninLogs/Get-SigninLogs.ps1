@@ -18,7 +18,7 @@ $total = $users.Count
 $updatedUsers = foreach ( $user in $users ) {
   $upn = $user.UserPrincipalName.ToLower()
 
-  Write-Host "Processing user $($user.UserPrincipalName) ($count/$total)"
+  Write-Host "Processing user $upn ($count/$total)"
   $count += 1
 
   $adLastLogon = Get-ADUser -Filter { UserPrincipalName -eq $upn } -Properties LastLogon | Select-Object @{name = "LastLogon"; expression = { [DateTime]::FromFileTime($_.LastLogon) } }

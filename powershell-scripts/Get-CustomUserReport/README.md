@@ -1,6 +1,6 @@
 # create certificate
--- https://geekshangout.com/connect-mggraph-using-a-service-principal/
--- https://practical365.com/use-certificate-authentication-microsoft-graph-sdk/
+- https://geekshangout.com/connect-mggraph-using-a-service-principal/
+- https://practical365.com/use-certificate-authentication-microsoft-graph-sdk/
 
 # create azure app
 add required permissions (MS Graph > App permissions)

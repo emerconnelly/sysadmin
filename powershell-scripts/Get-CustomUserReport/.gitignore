@@ -1,0 +1,5 @@
+# custom user variables
+variables.txt
+
+# output files
+CustomUserReport_*.csv

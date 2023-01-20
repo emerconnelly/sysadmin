@@ -1,0 +1,6 @@
+# fill out the following fields, then rename this file to variables.txt
+tenantId=
+appId=
+thumbprint=
+authUPN=
+searchBase=

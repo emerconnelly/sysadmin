@@ -2,21 +2,17 @@
 #Requires -Module Microsoft.Graph.Reports
 #Requires -Module MSOnline
 
-# import custom user variables
-$userVariables = Get-Content -Path variables.txt
-foreach ($variable in $userVariables) {
-  $name, $value = $variable -split '='
-  New-Variable -Name $name -Value $value -Force
-}
+# fill out variables_template.json and save as variables.json
+$userVariables = Get-Content -Raw -Path .\variables.json | ConvertFrom-Json
 
 $outFile = ".\CustomUserReport_$(get-date -f yyyy-MM-dd).csv"
 
 Select-MgProfile -Name Beta
-Connect-MgGraph -TenantId $tenantId -AppId $appId -CertificateThumbprint $thumbprint
+Connect-MgGraph -TenantId $userVariables.tenantId -AppId $userVariables.appId -CertificateThumbprint $userVariables.thumbprint
 
 Connect-MsolService 
 
-$users = Get-ADUser -Filter 'Enabled -eq $true' -SearchBase $searchBase -Properties PasswordLastSet, EmployeeID, Title, LastLogonDate
+$users = Get-ADUser -Filter 'Enabled -eq $true' -SearchBase $userVariables.searchBase -Properties PasswordLastSet, EmployeeID, Title, LastLogonDate
 
 $count = 1
 $total = $users.Count

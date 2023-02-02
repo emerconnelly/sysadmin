@@ -11,7 +11,7 @@ I may update this script over time to include new data, better the formatting, o
 - RSA-signed certificate for authentication, and the required variables found in [this json template](variables_template.json).
 
 ## how to
-1. download the (script)[Get-CustomUserReport.ps1] and [variables template](variables_template.json) to the same folder.
+1. download the [script](Get-CustomUserReport.ps1) and [variables template](variables_template.json) to the same folder.
 2. fill in your values and rename the variables template to `variables.json`.
 3. run the script using PowerShell 5.x
 

@@ -7,8 +7,8 @@ This script is intended to audit user account age & MFA details for hybrid and l
 I may update this script over time to include new data, better the formatting, or improve efficiency.
 
 ## pre-requisites
-- Microsoft account with the required permissions (for Legacy Per-User MFA Status & Exchange Online)
-- Azure app registration with the required permissions (for Microsoft Graph
+- Microsoft account with the required permissions (for Legacy Per-User MFA Status & Exchange Online).
+- Azure app registration with the required permissions (for Microsoft Graph).
 - RSA-signed certificate for authentication, and the required variables found in [this json template](variables_template.json).
 
 ## how to

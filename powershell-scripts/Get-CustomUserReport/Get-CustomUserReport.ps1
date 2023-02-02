@@ -21,10 +21,10 @@ Write-Host "Connecting to Azure AD..."
 Connect-MsolService
 Write-Host "Connecteion successful.`n"
 
+$users = Get-ADUser -Filter 'Enabled -eq $true' -SearchBase $userVariables.searchBase -Properties PasswordLastSet, EmployeeID, Title, LastLogonTimeStamp, Company
 $count = 1
 $total = $users.Count
 
-$users = Get-ADUser -Filter 'Enabled -eq $true' -SearchBase $userVariables.searchBase -Properties PasswordLastSet, EmployeeID, Title, LastLogonTimeStamp, Company
 $updatedUsers = foreach ( $user in $users ) {
   $upn = $user.UserPrincipalName.ToLower()
 

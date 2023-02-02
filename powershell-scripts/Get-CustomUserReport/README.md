@@ -21,7 +21,7 @@ I may update this script over time to include new data or make improvements.
 #### create certificate
 - https://geekshangout.com/connect-mggraph-using-a-service-principal/
 - https://practical365.com/use-certificate-authentication-microsoft-graph-sdk/
-- Exchange Online Management PS module does not support CNG certs
+- Exchange Online Management PS module does not support CNG-signed certs
   - https://www.oneidentity.com/community/identity-manager/f/forum/33082/the-new-powershell-v2-cmdlet-to-exchange-online
   - https://stackoverflow.com/questions/22581811/invalid-provider-type-specified-cryptographicexception-when-trying-to-load-pri/34103154#34103154
 

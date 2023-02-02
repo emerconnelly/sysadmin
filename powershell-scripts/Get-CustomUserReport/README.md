@@ -1,5 +1,5 @@
 # about
-This script is intended to audit user account age & MFA details using hybrid and legacy systems, i.e.
+This script is intended to audit user account age & MFA details for hybrid and legacy systems, i.e.
 - Azure Graph (Legacy Per-User MFA)
 - Exchange Online
 - Microsoft Graph

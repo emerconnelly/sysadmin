@@ -8,6 +8,7 @@ I may update this script over time to include new data, better the formatting, o
 
 This script expects you have an Azure app registered with the required permissions, a certificate for authentication, and the required variables found in [a relative link](variables_template.json)
 
+---
 ### personal notes
 #### create certificate
 - https://geekshangout.com/connect-mggraph-using-a-service-principal/

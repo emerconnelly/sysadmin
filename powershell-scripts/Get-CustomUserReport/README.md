@@ -38,6 +38,3 @@ I may update this script over time to include new data or make improvements.
 #### how to write ODate queries
 - https://learn.microsoft.com/en-us/graph/filter-query-parameter?tabs=powershell
 - https://helloitsliam.com/2021/10/19/microsoft-graph-powershell-filtering-working-and-failures/
-
-#### how to format date
-- https://stackoverflow.com/questions/2249619/how-to-format-a-datetime-in-powershell

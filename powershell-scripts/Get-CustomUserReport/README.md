@@ -6,7 +6,14 @@ This script is intended to audit user account age & MFA details for hybrid and l
 
 I may update this script over time to include new data, better the formatting, or improve efficiency.
 
-This script expects you have an Azure app registered with the required permissions, a certificate for authentication, and the required variables found in [this json template](variables_template.json).
+## pre-requisites
+- Azure app registration with the required permissions
+- RSA-signed certificate for authentication, and the required variables found in [this json template](variables_template.json).
+
+## how to
+1. download the (script)[Get-CustomUserReport.ps1) and variables [template](variables_template.json) to the same folder.
+2. fill in your values and rename the variables template to `variables.json`.
+3. run the script using PowerShell 5.x
 
 ---
 ### personal notes

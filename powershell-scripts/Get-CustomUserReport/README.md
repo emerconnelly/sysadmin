@@ -4,7 +4,7 @@ This script is intended to audit user account age & MFA details for hybrid and l
 - Exchange Online
 - Microsoft Graph
 
-I may update this script over time to include new data, better the formatting, or improve efficiency.
+I may update this script over time to include new data or make improvements.
 
 ## pre-requisites
 - Microsoft account with the required permissions (for Legacy Per-User MFA Status & Exchange Online).

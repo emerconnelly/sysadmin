@@ -20,7 +20,7 @@ Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exch
 ### Disable protocols at the tenant level
 
 #### Microsot 365
-- note this ONLY applies to newly created accounts, not previous accounts.
+- this ONLY applies to new accounts, not existing accounts.
 - admin.microsoft.com > Settings > Org settings > Modern authentication > disable all basic authentication protocls
 ![alt text](screenshot2.png)
 
@@ -28,7 +28,7 @@ Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exch
 - 
 
 ### Disable protocols via Azure CA
-- could be considered overkill if disabling at the 365 account & tenant level, but hey what do I know.
+- may be considered overkill if disabling at the 365 account & tenant level, but hey what do I know.
 
 ### Enable modern authentication for Outlook in Exchange Online
 - https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online

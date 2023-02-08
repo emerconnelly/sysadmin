@@ -18,7 +18,7 @@ Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exch
 
 ### Disable protocols at the tenant level
 
-#### M365
+#### Microsot 365
 - note this ONLY applies to newly created accounts, not previous accounts.
 - admin.microsoft.com > Settings > Org settings > Modern authentication > disable all basic authentication protocls
 ![alt text](screenshot2.png)

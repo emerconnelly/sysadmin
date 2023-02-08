@@ -20,7 +20,7 @@ Disable these protocols at the Microsoft 365 tenant level & the Exchange Online 
 
 #### M365
 - admin.microsoft.com > Settings > Org settings > Modern authentication > disable all basic authentication protocls
-- ![alt text](screenshot2.png)
+![alt text](screenshot2.png)
 
 #### Exchange Online
 - 

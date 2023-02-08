@@ -16,7 +16,7 @@ Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exch
 
 ## Recommendations
 
-Disable these protocols at the Microsoft 365 tenant level & the Exchange Online level
+### Disable protocols at tenant level
 
 #### M365
 - admin.microsoft.com > Settings > Org settings > Modern authentication > disable all basic authentication protocls
@@ -25,5 +25,5 @@ Disable these protocols at the Microsoft 365 tenant level & the Exchange Online 
 #### Exchange Online
 - 
 
-Enable modern authentication for Outlook in Exchange Online
+### Enable modern authentication for Outlook in Exchange Online
 - https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online

@@ -1,3 +1,5 @@
+#Requires ExchangeOnlineManagement
+
 $mailboxes = Get-Mailbox -ResultSize unlimited
 $count = 1
 $total = ($mailboxes | Measure-Object).Count

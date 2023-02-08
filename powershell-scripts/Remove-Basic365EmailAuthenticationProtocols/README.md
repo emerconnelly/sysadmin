@@ -31,5 +31,5 @@ Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exch
 - may be considered overkill if disabling at the 365 account & tenant level, but hey what do I know. (ノಥ,_｣ಥ)ノ彡┻━┻
 
 ### Enable modern authentication for Outlook in Exchange Online
-- auto-enabled for all tenants made after August 1, 2017
+- auto-enabled for tenants created after August 1, 2017
 - https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online

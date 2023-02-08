@@ -21,7 +21,7 @@ Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exch
 
 #### Microsot 365
 - this ONLY applies to new accounts, not existing accounts (excluding Exchange Online Powershell).
-- Exchange Online Powershell is a bit of a misnomer. Read the *learn more*.
+- Exchange Online Powershell is a bit of a misnomer. Read the *Learn more*.
 - admin.microsoft.com > Settings > Org settings > Modern authentication > disable all basic authentication protocls
 ![alt text](screenshot2.png)
 

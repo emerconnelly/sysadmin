@@ -5,11 +5,12 @@ This script disables **ALL** basic authentication protocols for every mailbox in
 
 Disabling these basic auth protocols will substantially improve your security posturing.
 
-BE CAREFUL -- analyze Azure sign-in logs before taking any actions. If you find accounts using these, selectively enable protocls per-account and find a modern auth solution.
+BE CAREFUL -- analyze Azure sign-in logs before taking any actions.  
+If you find accounts using these, selectively enable protocls per-account and find a modern auth solution.
 
 ## Why?
 
-Protocols like SMTP, POP, & IMAP do not authenticate with MFA, making them a popular attack vector.
+Protocols like SMTP, POP, & IMAP do not authenticate with MFA, making them a popular attack vector.  
 Don't fall prey to an SMTP phishing attack after putting in the hard work to deploy MFA.
 
 Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online

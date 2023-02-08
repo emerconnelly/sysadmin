@@ -5,7 +5,7 @@
 
 Disabling these basic auth protocols will substantially improve security posturing.
 
-BE CAREFUL -- analyze Azure sign-in logs before taking any actions.  
+**BE CAREFUL** -- analyze Azure sign-in logs before taking any actions.  
 If you find accounts using these, selectively enable protocls per-account and find a modern auth solution.
 
 ## Why?

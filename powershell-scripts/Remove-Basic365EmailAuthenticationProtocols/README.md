@@ -10,7 +10,7 @@ BE CAREFUL -- analyze Azure sign-in logs before taking any actions. If you find 
 ## Why?
 
 Protocols like SMTP, POP, & IMAP do not authenticate with MFA, making them a popular attack vector.
-Don't fall prey to an SMTP phishing hack after putting in the hardwork to deploy MFA.
+Don't fall prey to an SMTP phishing hack after putting in the hard work to deploy MFA.
 
 Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online
 

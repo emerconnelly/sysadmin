@@ -1,6 +1,6 @@
 # About
 
-This script disables **ALL** basic authentication protocols for every mailbox in a Microsoft 365 tenant.
+[This script](Remove-Basic365EmailAuthenticationProtocols.ps1) disables **ALL** basic authentication protocols for every mailbox in a Microsoft 365 tenant.
 ![alt text](screenshot1.png)
 
 Disabling these basic auth protocols will substantially improve security posturing.

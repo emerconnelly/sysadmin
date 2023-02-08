@@ -1,6 +1,6 @@
 # About
 This script disables **ALL** basic authentication protocols for every mailbox in your Microsoft 365 tenant.
-
+![alt text](screenshot1.png)
 Disabling these basic auth protocols can substantially improve your security posturing
 BE CAREFUL -- analyze your Azure sign-in logs before taking any actions.
 

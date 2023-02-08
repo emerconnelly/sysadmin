@@ -5,7 +5,7 @@ This script disables **ALL** basic authentication protocols for every mailbox in
 
 Disabling these basic auth protocols will substantially improve your security posturing.
 
-BE CAREFUL -- analyze Azure sign-in logs before taking any actions.
+BE CAREFUL -- analyze Azure sign-in logs before taking any actions. If you find accounts using these, selectively enable these protocls while working on a solution to migrate to a modern system.
 
 ## Why?
 
@@ -16,13 +16,17 @@ Read more: https://learn.microsoft.com/en-us/exchange/clients-and-mobile-in-exch
 
 ## Recommendations
 
-### Disable protocols at tenant level
+### Disable protocols at the tenant level
 
 #### M365
+- note this ONLY applies to newly created accounts, not previous accounts.
 - admin.microsoft.com > Settings > Org settings > Modern authentication > disable all basic authentication protocls
 ![alt text](screenshot2.png)
 
 #### Exchange Online
+- 
+
+### Disable protocols via Azure CA
 - 
 
 ### Enable modern authentication for Outlook in Exchange Online

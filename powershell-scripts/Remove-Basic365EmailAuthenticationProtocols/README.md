@@ -5,7 +5,7 @@ This script disables **ALL** basic authentication protocols for every mailbox in
 
 Disabling these basic auth protocols will substantially improve your security posturing.
 
-BE CAREFUL -- analyze Azure sign-in logs before taking any actions. If you find accounts using these, selectively enable these protocls while working on a solution to migrate to a modern system.
+BE CAREFUL -- analyze Azure sign-in logs before taking any actions. If you find accounts using these, selectively enable protocls per-account and find a modern auth solution.
 
 ## Why?
 

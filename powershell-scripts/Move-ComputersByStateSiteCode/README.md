@@ -23,7 +23,7 @@ This script assumes the following of an AD infrastructure:
 
 ```mermaid
 flowchart LR
-    AD Root --> Computers
+    AD Root --> computers1[Computers]
         subgraph container1[container]
         Computers
         end

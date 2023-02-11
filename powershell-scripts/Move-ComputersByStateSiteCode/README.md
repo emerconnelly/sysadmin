@@ -13,12 +13,12 @@ Assumes the following of an AD infrastructure:
 ```mermaid
 flowchart LR
     ad1[(AD Root)]
-    ad1 --> computers1[Computers]
+    ad1 --> computers1[CN=Computers]
         subgraph container1[Container]
         computers1
         end
     ad1 --> Sites
-        subgraph ou1[OU]
+        subgraph ou1[States]
         Sites --> Illinois
             subgraph state1[State]
             Illinois --> ILCH00

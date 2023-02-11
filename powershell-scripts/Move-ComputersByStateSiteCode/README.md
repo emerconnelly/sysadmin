@@ -23,26 +23,31 @@ This script assumes the following of an AD infrastructure:
 
 ```mermaid
 flowchart LR
-    Sites --> Illinois
-      subgraph state1[state]
-      Illinois --> Chicago
-        subgraph city1[city]
-        Chicago --> computer1[Computers]
+        subgraph container1[container]
+        Computers
         end
-      Illinois --> Aurora
-        subgraph city2[city]
-        Aurora --> computer2[Computers]
+        subgraph ou1[ou]
+        Sites --> Illinois
+            subgraph state1[state]
+            Illinois --> Chicago
+                subgraph city1[city]
+                Chicago --> computer1[Computers]
+                end
+            Illinois --> Aurora
+                subgraph city2[city]
+                Aurora --> computer2[Computers]
+                end
+            end
+        Sites --> Wisconsin
+            subgraph state2[state]
+            Wisconsin --> Madison
+                subgraph city3[city]
+                Madison --> computer3[Computers]
+                end
+            Wisconsin --> Milwaukee
+                subgraph city4[city]
+                Milwaukee --> computer4[Computers]
+                end
+            end
         end
-      end
-    Sites --> Wisconsin
-      subgraph state2[state]
-      Wisconsin --> Madison
-        subgraph city3[city]
-        Madison --> computer3[Computers]
-        end
-      Wisconsin --> Milwaukee
-        subgraph city4[city]
-        Milwaukee --> computer4[Computers]
-        end
-      end
 ```

@@ -23,7 +23,7 @@ flowchart LR
             subgraph state1[State]
             illinois --> OU=ILCH00
                 subgraph city1[City - Chicago]
-                ILCH00 --> computer1{{Computers}}
+                OU=ILCH00 --> computer1{{Computers}}
                 end
             illinois --> OU=ILAU00
                 subgraph city2[City - Aurora]

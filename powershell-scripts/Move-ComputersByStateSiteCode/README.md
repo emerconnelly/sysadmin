@@ -30,6 +30,7 @@ flowchart LR
         Chicago --> computer1[Computers]
       Illinois --> Aurora
         Aurora --> computer2[Computers]
+        end
       end
     Sites --> Wisconsin
       subgraph state2[state]

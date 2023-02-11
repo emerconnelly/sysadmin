@@ -26,5 +26,11 @@ flowchart LR
     Sites --> Illinois
       Illinois --> Chicago
         Chicago --> Computers
+      Illinois --> Aurora
+        Aurora --> Computers
     Sites --> Wisconsin
+      Wisconsin --> Madison
+        Madison --> Computers
+      Wisconsin --> Milwaukee
+        Milwaukee --> Computers
 ```

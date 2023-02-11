@@ -22,22 +22,22 @@ flowchart LR
         Sites --> Illinois
             subgraph state1[state]
             Illinois --> ILCH00
-                subgraph city1[city:Chicago]
+                subgraph city1[city - Chicago]
                 ILCH00 --> computer1[Computers]
                 end
             Illinois --> ILAU00
-                subgraph city2[city:Aurora]
+                subgraph city2[city - Aurora]
                 ILAU00 --> computer2[Computers]
                 end
             end
         Sites --> Wisconsin
             subgraph state2[state]
             Wisconsin --> WIMA00
-                subgraph city3[city:Madison]
+                subgraph city3[city - Madison]
                 WIMA00 --> computer3[Computers]
                 end
             Wisconsin --> WIMI00
-                subgraph city4[city:Milwaukee]
+                subgraph city4[city - Milwaukee]
                 WIMI00 --> computer4[Computers]
                 end
             end

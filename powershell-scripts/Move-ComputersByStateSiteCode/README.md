@@ -25,9 +25,10 @@ This script assumes the following of an AD infrastructure:
 flowchart LR
     ADRoot --> computers1[Computers]
         subgraph container1[container]
+        computers1
         end
-        subgraph ou1[ou]
     ADRoot --> Sites
+        subgraph ou1[ou]
         Sites --> Illinois
             subgraph state1[state]
             Illinois --> Chicago

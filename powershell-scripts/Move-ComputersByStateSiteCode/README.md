@@ -10,4 +10,4 @@ This script assumes the following of an AD infrastructure:
     2. need to be moved to a custom "Sites" OU.
 2. "Sites" is a root OU and has the following heirarchy:
     - Sites
-        - asdfasdf
+      - asdfasdf

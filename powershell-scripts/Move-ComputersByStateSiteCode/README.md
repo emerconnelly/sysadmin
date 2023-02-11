@@ -36,7 +36,7 @@ flowchart LR
       end
     Sites --> Wisconsin
       subgraph state2[state]
-      Wisconsin --> Madiso
+      Wisconsin --> Madison
         Madison --> computer3[Computers]
       Wisconsin --> Milwaukee
         Milwaukee --> computer4[Computers]

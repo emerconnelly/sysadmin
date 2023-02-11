@@ -21,13 +21,13 @@ flowchart LR
         subgraph states1[States]
         sites --> illinois(OU=Illinois)
             subgraph state1[State]
-            illinois --> OU=ILCH00
+            illinois --> chicago(OU=ILCH00)
                 subgraph city1[City - Chicago]
-                OU=ILCH00 --> computer1{{Computers}}
+                chicago --> computer1{{Computers}}
                 end
-            illinois --> OU=ILAU00
+            illinois --> aurora(OU=ILAU00)
                 subgraph city2[City - Aurora]
-                OU=ILAU00 --> computer2{{Computers}}
+                Oaurora --> computer2{{Computers}}
                 end
             end
         sites --> OU=Wisconsin

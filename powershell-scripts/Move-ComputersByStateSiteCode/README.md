@@ -24,15 +24,16 @@ This script assumes the following of an AD infrastructure:
 ```mermaid
 flowchart LR
     Sites --> Illinois
-      subgraph state1[state]
+      subgraph state1[<state>]
       Illinois --> Chicago
+        subgraph city1[city]
         Chicago --> computer1[Computers]
       Illinois --> Aurora
         Aurora --> computer2[Computers]
       end
     Sites --> Wisconsin
       subgraph state2[state]
-      Wisconsin --> Madison
+      Wisconsin --> Madiso
         Madison --> computer3[Computers]
       Wisconsin --> Milwaukee
         Milwaukee --> computer4[Computers]

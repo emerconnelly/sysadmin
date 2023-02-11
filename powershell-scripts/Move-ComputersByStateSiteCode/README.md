@@ -14,30 +14,30 @@ Assumes the following of an AD infrastructure:
 flowchart LR
     ad1[(AD Root)]
     ad1 --> computers1[Computers]
-        subgraph container1[container]
+        subgraph container1[Container]
         computers1
         end
     ad1 --> Sites
-        subgraph ou1[ou]
+        subgraph ou1[OU]
         Sites --> Illinois
-            subgraph state1[state]
+            subgraph state1[State]
             Illinois --> ILCH00
-                subgraph city1[city - Chicago]
+                subgraph city1[City - Chicago]
                 ILCH00 --> computer1{{Computers}}
                 end
             Illinois --> ILAU00
-                subgraph city2[city - Aurora]
+                subgraph city2[City - Aurora]
                 ILAU00 --> computer2{{Computers}}
                 end
             end
         Sites --> Wisconsin
-            subgraph state2[state]
+            subgraph state2[State]
             Wisconsin --> WIMA00
-                subgraph city3[city - Madison]
+                subgraph city3[City - Madison]
                 WIMA00 --> computer3{{Computers}}
                 end
             Wisconsin --> WIMI00
-                subgraph city4[city - Milwaukee]
+                subgraph city4[City - Milwaukee]
                 WIMI00 --> computer4{{Computers}}
                 end
             end

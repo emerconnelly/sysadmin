@@ -1,6 +1,6 @@
 # About
 
-[This script](Move-ComputersByStateSiteCode.ps1) can organize newly created AD computer objects into specific OU's based on state abbrevations.
+[This script](Move-ComputersByStateSiteCode.ps1) organizes new AD computer objects into specific OU's based on US state abbrevations.
 
 ### Assumptions
 

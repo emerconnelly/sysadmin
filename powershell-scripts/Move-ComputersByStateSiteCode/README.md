@@ -23,5 +23,6 @@ This script assumes the following of an AD infrastructure:
 
 ```mermaid
 flowchart LR
-    Start --> Stop
+    Sites --> Illinois
+    Sites --> Wisconsin
 ```

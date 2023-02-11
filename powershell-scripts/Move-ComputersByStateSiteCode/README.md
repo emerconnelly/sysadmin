@@ -43,6 +43,6 @@ flowchart LR
       Wisconsin --> Milwaukee
         subgraph city4[city]
         Milwaukee --> computer4[Computers]
-        subgraph city4[city]
+        end
       end
 ```

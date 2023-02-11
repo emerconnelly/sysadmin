@@ -20,7 +20,7 @@ flowchart LR
     ad1 --> sites(OU=Sites)
         subgraph states1[States]
         sites --> illinois(OU=Illinois)
-            subgraph state1[State]
+            subgraph state1[State - Illinois]
             illinois --> chicago(OU=ILCH00)
                 subgraph city1[City - Chicago]
                 chicago --> computer1{{OU=Computers}}
@@ -31,7 +31,7 @@ flowchart LR
                 end
             end
         sites --> wisconsin(OU=Wisconsin)
-            subgraph state2[State]
+            subgraph state2[State - Wisconsin]
             wisconsin --> madison(OU=WIMA00)
                 subgraph city3[City - Madison]
                 madison --> computer3{{OU=Computers}}

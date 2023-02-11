@@ -25,7 +25,6 @@ This script assumes the following of an AD infrastructure:
 flowchart LR
     AD Root --> computers1[Computers]
         subgraph container1[container]
-        Computers
         end
         subgraph ou1[ou]
     AD Root --> Sites

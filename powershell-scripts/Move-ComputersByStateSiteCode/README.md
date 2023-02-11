@@ -28,13 +28,13 @@ flowchart LR
       Illinois --> Chicago
         Chicago --> computer1[Computers]
       Illinois --> Aurora
-        Aurora --> Computers
+        Aurora --> computer2[Computers]
       end
     Sites --> Wisconsin
       subgraph st2 [state]
       Wisconsin --> Madison
-        Madison --> Computers
+        Madison --> computer3[Computers]
       Wisconsin --> Milwaukee
-        Milwaukee --> Computers
+        Milwaukee --> computer4[Computers]
       end
 ```

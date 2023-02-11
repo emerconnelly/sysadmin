@@ -66,7 +66,7 @@ $rootSearchBase = "OU=Sites,DC=EXAMPLE,DC=LOCAL"
 $states = Get-ADOrganizationalUnit -Filter * -SearchScope OneLevel -SearchBase $rootSearchBase | ? { $_.Name[0] -ne "_" }
 $sites = $states | % { Get-ADOrganizationalUnit -Filter * -SearchScope OneLevel -SearchBase "OU=$($_.Name),$rootSearchBase" }
 
- = "OU=Computers,DC=EXAMPLE,DC=LOCAL"
+$rootSearchBase = "OU=Computers,DC=EXAMPLE,DC=LOCAL"
 $computers = Get-ADComputer -Filter * -SearchBase $rootSearchBase
 foreach ($computer in $computers ) {
   $siteCode = $computer.Name.Substring(0, 6)

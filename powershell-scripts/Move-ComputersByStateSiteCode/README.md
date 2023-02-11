@@ -27,7 +27,7 @@ flowchart LR
                 end
             illinois --> aurora(OU=ILAU00)
                 subgraph city2[City - Aurora]
-                Oaurora --> computer2{{Computers}}
+                aurora --> computer2{{Computers}}
                 end
             end
         sites --> OU=Wisconsin

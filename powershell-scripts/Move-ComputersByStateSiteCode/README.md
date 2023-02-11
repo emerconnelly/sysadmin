@@ -20,3 +20,8 @@ This script assumes the following of an AD infrastructure:
           - Computers
         - Milwaukee
           - Computers
+
+```mermaid
+flowchart LR
+    Start --> Stop
+```

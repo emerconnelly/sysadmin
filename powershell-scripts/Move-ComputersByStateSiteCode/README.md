@@ -26,7 +26,7 @@ flowchart LR
     Sites --> Illinois
       subgraph st1 [state]
       Illinois --> Chicago
-        Chicago --> computers1 [Computers]
+        Chicago --> computer1[Computers]
       Illinois --> Aurora
         Aurora --> Computers
       end

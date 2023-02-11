@@ -24,10 +24,12 @@ This script assumes the following of an AD infrastructure:
 ```mermaid
 flowchart LR
     Sites --> Illinois
+      subgraph one
       Illinois --> Chicago
         Chicago --> Computers
       Illinois --> Aurora
         Aurora --> Computers
+      end
     Sites --> Wisconsin
       Wisconsin --> Madison
         Madison --> Computers

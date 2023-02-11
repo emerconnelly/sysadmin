@@ -23,11 +23,11 @@ This script assumes the following of an AD infrastructure:
 
 ```mermaid
 flowchart LR
-    AD Root --> computers1[Computers]
+    ADRoot --> computers1[Computers]
         subgraph container1[container]
         end
         subgraph ou1[ou]
-    AD Root --> Sites
+    ADRoot --> Sites
         Sites --> Illinois
             subgraph state1[state]
             Illinois --> Chicago

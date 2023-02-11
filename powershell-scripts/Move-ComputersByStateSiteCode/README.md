@@ -37,8 +37,12 @@ flowchart LR
     Sites --> Wisconsin
       subgraph state2[state]
       Wisconsin --> Madison
+        subgraph city3[city]
         Madison --> computer3[Computers]
+        end
       Wisconsin --> Milwaukee
+        subgraph city4[city]
         Milwaukee --> computer4[Computers]
+        subgraph city4[city]
       end
 ```

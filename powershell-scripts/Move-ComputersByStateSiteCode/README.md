@@ -17,9 +17,9 @@ flowchart LR
         subgraph container1[Container]
         computers1
         end
-    ad1 --> Sites
+    ad1 --> OU=Sites
         subgraph ou1[States]
-        Sites --> OU=Illinois
+        OU=Sites --> OU=Illinois
             subgraph state1[State]
             OU=Illinois --> OU=ILCH00
                 subgraph city1[City - Chicago]
@@ -30,7 +30,7 @@ flowchart LR
                 OU=ILAU00 --> computer2{{Computers}}
                 end
             end
-        Sites --> OU=Wisconsin
+        OU=Sites --> OU=Wisconsin
             subgraph state2[State]
             OU=Wisconsin --> OU=WIMA00
                 subgraph city3[City - Madison]

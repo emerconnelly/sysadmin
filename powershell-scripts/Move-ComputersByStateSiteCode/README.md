@@ -24,7 +24,7 @@ This script assumes the following of an AD infrastructure:
 ```mermaid
 flowchart LR
     Sites --> Illinois
-      subgraph state1[\<state\>]
+      subgraph state1[state]
       Illinois --> Chicago
         subgraph city1[city]
         Chicago --> computer1[Computers]

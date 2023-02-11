@@ -19,26 +19,26 @@ flowchart LR
         end
     ad1 --> Sites
         subgraph ou1[States]
-        Sites --> Illinois
+        Sites --> OU=Illinois
             subgraph state1[State]
-            Illinois --> ILCH00
+            OU=Illinois --> OU=ILCH00
                 subgraph city1[City - Chicago]
                 ILCH00 --> computer1{{Computers}}
                 end
-            Illinois --> ILAU00
+            OU=Illinois --> OU=ILAU00
                 subgraph city2[City - Aurora]
-                ILAU00 --> computer2{{Computers}}
+                OU=ILAU00 --> computer2{{Computers}}
                 end
             end
-        Sites --> Wisconsin
+        Sites --> OU=Wisconsin
             subgraph state2[State]
-            Wisconsin --> WIMA00
+            OU=Wisconsin --> OU=WIMA00
                 subgraph city3[City - Madison]
-                WIMA00 --> computer3{{Computers}}
+                OU=WIMA00 --> computer3{{Computers}}
                 end
-            Wisconsin --> WIMI00
+            OU=Wisconsin --> OU=WIMI00
                 subgraph city4[City - Milwaukee]
-                WIMI00 --> computer4{{Computers}}
+                OU=WIMI00 --> computer4{{Computers}}
                 end
             end
         end

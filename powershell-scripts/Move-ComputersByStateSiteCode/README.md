@@ -28,7 +28,9 @@ flowchart LR
       Illinois --> Chicago
         subgraph city1[city]
         Chicago --> computer1[Computers]
+        end
       Illinois --> Aurora
+        subgraph city2[city]
         Aurora --> computer2[Computers]
         end
       end

@@ -13,7 +13,7 @@ This script assumes the following of an AD infrastructure:
       - Illinois
         - Chicago
           - Computers
-        - Aurors
+        - Aurora
           - Computers
       - Wisconsin
         - Madison
@@ -24,5 +24,7 @@ This script assumes the following of an AD infrastructure:
 ```mermaid
 flowchart LR
     Sites --> Illinois
+      Illionois --> Chicago
+        Chicago --> Computers
     Sites --> Wisconsin
 ```

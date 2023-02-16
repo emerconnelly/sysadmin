@@ -1,0 +1,11 @@
+SigninLogs
+| where TimeGenerated {TimeRange}
+| where OperationName == "Sign-in activity"
+| summarize
+  TotalMultiFactorAuth=countif(AuthenticationRequirement=="multiFactorAuthentication"),
+  TotalSingleFactorAuth=countif(AuthenticationRequirement=="singleFactorAuthentication"),
+  count() by AppDisplayName,
+  AppId
+| project-rename App=AppDisplayName, Count=count_
+| project App, Count, TotalMultiFactorAuth, TotalSingleFactorAuth
+| order by Count desc

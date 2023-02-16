@@ -170,7 +170,6 @@
     }
   ],
   "fallbackResourceIds": [
-    "/subscriptions/e5845151-44c6-4bfb-8501-7afa2ad48dde/resourceGroups/cus-lrs-prod-aadLogs-001-rg/providers/Microsoft.OperationalInsights/workspaces/log-aadLogs-prod-centralus-001"
   ],
   "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
 }
